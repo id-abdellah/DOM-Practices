@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #2E4F4F;
+    font-family: 'Tajawal', sans-serif;
+    padding: 20px;
+}
+
+.box-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box-one a {
+    background-color: #2C3333;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+.box-one a:hover {
+    filter: brightness(90%);
+}
+
+.box-one a:active {
+    transform: scale(.98);
+}

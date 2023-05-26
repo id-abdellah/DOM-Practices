@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: #79a3a5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-container {
+  background-color: #dde6ed;
+  padding: 15px 30px;
+  border-radius: 8px;
+  width: 370px;
+  text-align: center;
+  margin-inline: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.quote-section .quote {
+  margin-block: 20px 6px;
+  position: relative;
+}
+
+.persone {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.btn {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding-block: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: rgb(181, 197, 196);
+}
+
+.btn:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}

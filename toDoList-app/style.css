@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: #79a3a5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.parent-container {
+  background-color: #9ab9b9;
+  height: min-content;
+  width: min-content;
+  padding: 20px;
+  margin-top: 20px;
+  margin-inline: 10px;
+  border-radius: 4px;
+}
+
+.task-place {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6e7a7a;
+  /* margin-bottom: 20px; */
+}
+
+.task-place input {
+  padding: 6px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  /* flex: 1; */
+  width: 600px;
+  font-weight: 500;
+  caret-color: #79a3a5;
+}
+
+@media (max-width: 870px) {
+  .task-place input {
+    width: 700px;
+  }
+}
+
+@media (max-width: 750px) {
+  .task-place input {
+    width: 560px;
+  }
+}
+
+@media (max-width: 690px) {
+  .task-place input {
+    width: 370px;
+  }
+}
+
+.task-place button {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-place button:hover {
+  filter: brightness(88%);
+}
+
+.task-place button:active {
+  scale: 0.92;
+}
+
+.deleting-icon:hover {
+  color: white !important;
+  background-color: #e43e31;
+}
+
+.deleting-icon:active {
+  scale: 0.9;
+}
+
+.done-icon:hover {
+  color: white !important;
+  background-color: #52cb5f;
+}
+
+.done-icon:active {
+  scale: 0.9;
+}
