@@ -42,23 +42,24 @@ body {
   caret-color: #79a3a5;
 }
 
-@media (max-width: 870px) {
+
+@media (max-width: 760px) {
   .task-place input {
-    width: 700px;
+    width: 500px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .task-place input {
-    width: 560px;
+    width: 300px;
   }
 }
 
-@media (max-width: 690px) {
+/* @media (max-width: 400px) {
   .task-place input {
-    width: 320px;
+    width: 300px;
   }
-}
+} */
 
 .task-place button {
   width: 30px;
