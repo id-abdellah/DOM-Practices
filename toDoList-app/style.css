@@ -56,7 +56,7 @@ body {
 
 @media (max-width: 690px) {
   .task-place input {
-    width: 370px;
+    width: 320px;
   }
 }
 
