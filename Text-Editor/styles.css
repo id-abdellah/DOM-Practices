@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Playfair', serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: #79a3a5;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #a1babb;
+  width: 95%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.controllers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+.controllers select {
+  width: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 6px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+#bold,
+#italic {
+  width: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.bold-button-clicked,
+.inverted-colors-clicked,
+.general-button-clicked {
+  filter: brightness(89%);
+}
+
+.p-m {
+  display: flex;
+  gap: 1px;
+}
+
+.p-m * {
+  background-color: white;
+  border: none;
+  outline: none;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+#invertColors {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding-inline: 10px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pointer:hover {
+  filter: brightness(89%);
+}
+
+.pointer:active {
+  scale: 0.95;
+}
+
+/* Main Text */
+.main-text {
+  padding: 10px 6px;
+  background-color: white;
+  border-radius: inherit;
+  font-weight: 400;
+  outline: none;
+}
+
+/* used in js file */
+
+.main-text-bolded {
+  font-weight: 900;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.inverted {
+  color: white;
+  background-color: rgb(17, 16, 16);
+}
+
+/* make it editable button */
+#makeItEditable {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding-inline: 10px;
+}
+
+/* italic button */
+#italic {
+  font-family: 'Playfair', serif;
+  font-style: italic;
+}
