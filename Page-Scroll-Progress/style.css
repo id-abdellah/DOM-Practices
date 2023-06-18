@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 6000px;
+    background-color: #eee;
+}
+
+.scroller {
+    width: 0;
+    height: 5px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+img {
+    width: 100%;
+}
