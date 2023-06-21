@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="box">
+        <div>
+            <label for="">Offset-X</label>
+            <input type="range" class="offset-x" min="-500" max="500" value="0" data-v="0" />
+        </div>
+        <div>
+            <label for="">Offset-Y</label>
+            <input type="range" class="offset-y" min="-500" max="500" value="0" data-v="0" />
+        </div>
+        <div>
+            <label for="">Blur Radius</label>
+            <input type="range" class="blur-radius" min="0" max="400" value="0" data-v="0" />
+        </div>
+        <div>
+            <label for="">Blur Spread</label>
+            <input type="range" class="blur-spread" min="-500" max="500" value="0" data-v="0" />
+        </div>
+        <div>
+            <label for="">Color</label>
+            <input type="color" class="color" value="#000000" />
+        </div>
+        <div>
+            <button class="reset">Reset</button>
+        </div>
+        <div>
+            <input type="text" class="the-code" readonly value="box-Shadow: 0px 0px 0px 0px #000000;">
+        </div>
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+
+</html>
