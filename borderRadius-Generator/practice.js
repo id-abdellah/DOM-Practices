@@ -8,6 +8,9 @@ const bottomLeft = document.querySelector(".b-l")
 let arrOfInputs = [topLeft, topRight, bottomLeft, bottomRight];
 
 
+const output = document.querySelector(".output input");
+
+
 const setWidth = document.querySelector(".w")
 const setHeight = document.querySelector(".h")
 const setBtn = document.querySelector(".h-w button")
@@ -32,5 +35,6 @@ arrOfInputs.forEach((inp) => {
     inp.addEventListener("input", (e) => {
         updateValues()
         inp.dataset.v = inp.value;
+        output.value = `box-shadow: ${topLeft.value}px ${topRight.value}px ${bottomRight.value}px ${bottomLeft.value}px;`;
     });
 });

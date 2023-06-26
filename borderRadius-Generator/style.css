@@ -59,3 +59,8 @@ body {
 .h-w * {
     padding: 10px;
 }
+
+
+.output input {
+    padding: 10px;
+}
