@@ -1,0 +1,93 @@
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0, /* on (1), off (0) */ 'wght' 700,
+    /* 100 => 700 */ 'GRAD' 200, /* -25, 0, 200 */ 'opsz' 48; /* 20, 24, 40, 48 */
+}
+
+/*============================== 
+
+================================ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Playfair', serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #79a3a5;
+  min-height: 100vh;
+  /* height: 4000px; */
+  /*  */
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+}
+
+/*============================== 
+
+================================ */
+
+.container {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 40px auto;
+}
+
+.container .inpts * {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.container .inpts input[type='range'] {
+  width: 94%;
+  position: relative;
+}
+
+.container .inpts input[type='range']::after {
+  content: attr(data-value);
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .inpts input[type='text'] {
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid rgb(172, 170, 170);
+  position: relative;
+}
+
+.conI {
+  position: relative;
+}
+
+.container .inpts button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: blueviolet;
+  cursor: pointer;
+  color: white;
+}
+
+.container .inpts button:hover {
+  filter: brightness(90%);
+}
+
+.container .inpts button:active {
+  scale: 0.95;
+}
