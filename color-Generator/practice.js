@@ -56,5 +56,8 @@ likBtn.addEventListener("click", () => {
 
 
 deleteAll.addEventListener("click", () => {
-    tbody.innerHTML = ""
+    let confirmation = confirm("Are you sure?");
+    if (confirmation) {
+        tbody.innerHTML = ""
+    }
 })
