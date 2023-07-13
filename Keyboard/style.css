@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #24419f, #1566bf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+
+.keyboard-Container {
+    background-color: #273493;
+    width: 800px;
+    padding: 14px;
+    border-radius: 4px;
+    color: white;
+    display: grid;
+    gap: 10px;
+    margin-inline: 10px;
+}
+
+@media (max-width: 620px) {
+    .keyboard-Container {
+        rotate: 90deg;
+    }
+}
+
+.keyboard-Container input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.keyboard-Container input::placeholder {
+    color: gray;
+    font-size: 15px;
+}
+
+.keyboard-Container div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.keyboard-Container span {
+    background-color: #242f7e;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    flex: 1;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.keyboard-Container span:hover {
+    filter: brightness(80%);
+}
+
+.keyboard-Container span:active {
+    scale: 0.80;
+}
+
+.keyboard-Container div.second-row {
+    padding-inline: 15px;
+}
+
+.keyboard-Container div.third-row span.arrow-up {
+    font-weight: bold;
+    font-size: 18px;
+    padding-inline: 12px;
+}
+
+.keyboard-Container div.third-row span.delete {
+    padding-inline: 12px;
+    background-color: #f50057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard-Container div.fourth-row span.space {
+    padding-inline: 70px;
+}
+
+.keyboard-Container div.fourth-row span.search {
+    padding-inline: 30px;
+}
+
+/* turn between uppercase and lowercase */
+
+.keyboard-Container div.third-row span.arrow-up-pressed,
+.keyboard-Container div.fourth-row span.show-numbers {
+    filter: brightness(50%);
+}
+
+/* hide the numbers row */
+
+.keyboard-Container div.numbers-row {
+    display: none;
+}
