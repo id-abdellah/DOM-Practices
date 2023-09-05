@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* =====  */
+
+.calculator-container {
+    width: 300px;
+    background-color: #23272e;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 10px;
+
+    & .output-section {
+        width: 100%;
+        background-color: white;
+        height: 55px;
+        border-radius: 4px;
+        position: relative;
+
+        & .previous-operand {
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            z-index: 1;
+            transition: .3s;
+        }
+
+        & .current-operand {
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+        }
+
+    }
+}
+
+.buttons-section {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "ac de dot slash"
+        "seven eight nine multiply"
+        "four five six substraction"
+        "one two three addition"
+        "couplzeros zero equales equales";
+
+    /* --- */
+
+    & * {
+        background-color: inherit;
+        text-align: center;
+        border-radius: 4px;
+        padding-block: 4px;
+        box-shadow: -2px -2px 4px 0px rgba(255, 255, 255, 0.521);
+        color: white;
+        cursor: pointer;
+        transition: .3s;
+        font-weight: 600;
+        user-select: none;
+    }
+
+    & :hover {
+        background-color: white;
+        color: black;
+    }
+
+    & :active {
+        scale: .92;
+    }
+
+
+    /* --- */
+
+
+    & div[data-content="ac"] {
+        grid-area: ac;
+        color: lightgreen;
+    }
+
+    & div[data-content="de"] {
+        color: lightgreen;
+        grid-area: de;
+    }
+
+    & div[data-content="dot"] {
+        color: lightgreen;
+        grid-area: dot;
+    }
+
+    & div[data-content="/"] {
+        color: lightgreen;
+        grid-area: slash;
+    }
+
+    & div[data-content="x"] {
+        color: lightgreen;
+        grid-area: multiply;
+    }
+
+    & div[data-content="-"] {
+        color: lightgreen;
+        grid-area: substraction;
+    }
+
+    & div[data-content="+"] {
+        grid-area: addition;
+        color: lightgreen;
+    }
+
+    & div[data-content="="] {
+        color: lightgreen;
+        grid-area: equales;
+    }
+
+    & div[data-content="00"] {
+        grid-area: couplzeros;
+    }
+
+    & div[data-content="0"] {
+        grid-area: zero;
+    }
+
+    & div[data-content="1"] {
+        grid-area: one;
+    }
+
+    & div[data-content="2"] {
+        grid-area: two;
+    }
+
+    & div[data-content="3"] {
+        grid-area: three;
+    }
+
+    & div[data-content="4"] {
+        grid-area: four;
+    }
+
+    & div[data-content="5"] {
+        grid-area: five;
+    }
+
+    & div[data-content="6"] {
+        grid-area: six;
+    }
+
+    & div[data-content="7"] {
+        grid-area: seven;
+    }
+
+    & div[data-content="8"] {
+        grid-area: eight;
+    }
+
+    & div[data-content="9"] {
+        grid-area: nine;
+    }
+
+}

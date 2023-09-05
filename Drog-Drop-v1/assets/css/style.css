@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "jost", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100dvh;
+    background-color: #4f5b60f0;
+    display: flex;
+    /* justify-content: center; */
+    padding: 10px;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+/* --------------------------------  */
+
+.creator-container {
+    background-color: #4f5b60f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 310px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.527);
+
+    & h3 {
+        color: white;
+    }
+
+    & input {
+        display: block;
+        width: 100%;
+        margin-block: 10px;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+    }
+
+    & button {
+        display: block;
+        width: 100%;
+        background-color: burlywood;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        padding: 5px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    & button:hover {
+        opacity: .8;
+    }
+}
+
+.boxs-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 20px;
+    position: relative;
+
+    & .item {
+        padding: 20px;
+        background-color: white;
+        width: calc(95% / 4);
+        border-radius: 8px;
+        align-self: baseline;
+        transition: .3s;
+        position: relative;
+    }
+
+    & .item h3 {
+        color: black;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #4f5b60f0;
+    }
+
+    & p:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.boxs-container .item p {
+    width: 100%;
+    background-color: violet;
+    padding: 10px;
+    /* border-radius: 4px;   */
+}
+
+.paragraphsCounter {
+    position: absolute;
+    color: gray;
+    right: 20px;
+    bottom: 2px;
+    font-size: 12px;
+}

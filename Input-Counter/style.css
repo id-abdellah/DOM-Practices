@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* =====  */
+
+.container {
+    width: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.inp-container input {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.inp-container input:focus {
+    outline: none;
+}
+
+.inp-container .progress {
+    width: 0px;
+    height: 2px;
+    background-color: rgb(93, 184, 93);
+    display: block;
+    position: relative;
+    top: -2px;
+}
+
+.counter {
+    text-align: end;
+    font-weight: 600;
+}

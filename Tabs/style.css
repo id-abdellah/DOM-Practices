@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* =====  */
+
+.parent-container {
+    width: 600px;
+    margin: 20px auto;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    padding: 10px 20px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: .3s;
+}
+
+ul li:hover,
+.active {
+    background-color: #ddd;
+}
+
+.contents div {
+    background-color: #eee;
+    padding: 20px;
+}
+
+
+.contents div:not(:first-child) {
+    display: none;
+}
