@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Writer effect</title>
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- Styles -->
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .type {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        .start {
+            padding: 8px;
+            outline: none;
+            border: none;
+            background-color: #eee;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="start">Start Typing</button>
+    <p class="type"></p>
+
+
+    <!-- Script -->
+
+    <script>
+        let element = document.querySelector(".type");
+        let text = prompt("enter which text do you want");
+        let button = document.querySelector(".start");
+
+        button.onclick = () => {
+            let i = 0;
+
+            let typeWriterInterval = setInterval(() => {
+                element.textContent += text[i];
+                i++;
+
+                if (i == text.length) {
+                    clearInterval(typeWriterInterval)
+                }
+            }, 160);
+
+        };
+
+    </script>
+
+</body>
+
+</html>

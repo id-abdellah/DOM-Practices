@@ -1,0 +1,60 @@
+@use "mixins" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --mainColor: rgba(255, 0, 0, 0.518);
+}
+
+@include resetElements;
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #444;
+    font-family: "poppins", sans-serif;
+    min-height: 100dvh;
+    position: relative;
+}
+
+/* ---- */
+
+.wrapper {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    .copy_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        * {
+            display: block;
+            flex: 1;
+            padding: 4px 8px;
+        }
+    }
+
+    .past_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        * {
+            display: block;
+            flex: 1;
+            padding: 4px 8px;
+        }
+    }
+}
