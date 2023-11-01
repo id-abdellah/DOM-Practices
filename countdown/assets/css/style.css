@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500&display=swap');
+
+body {
+    height: 100dvh;
+    background-image: linear-gradient(to bottom left, #778eb8, #2b4889);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(40px);
+    animation: anime 2s infinite linear alternate;
+}
+
+@keyframes anime {
+    to {
+        transform: translateX(-50%) translateY(60px);
+    }
+}
+
+.container-box {
+    width: 250px;
+    height: 180px;
+    background-color: #284286;
+    border-radius: 8px;
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    .container-box {
+        height: 140px;
+    }
+}
+
+
+.countdown {
+    background-color: #4fa3ee;
+    position: absolute;
+    padding: 15px 15px 25px 15px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.countdown span {
+    display: block;
+    position: relative;
+    font-size: 40px;
+}
+
+@media (max-width: 400px) {
+    .countdown span {
+        font-size: 20px;
+    }
+}
+
+.countdown span:nth-child(odd)::after {
+    content: attr(data-sm);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.countdown span:nth-child(odd) {
+    min-width: 55px;
+}
+
+
+@media (max-width: 400px) {
+    .countdown span:nth-child(odd) {
+        min-width: 50px;
+        text-align: center;
+    }
+}
+
+.countdown span:nth-child(even) {
+    padding-inline: 15px;
+}
+
+@media (max-width: 400px) {
+    .countdown span:nth-child(even) {
+        padding-inline: 8px;
+    }
+}
