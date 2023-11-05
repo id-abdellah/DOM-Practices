@@ -19,7 +19,6 @@ button.addEventListener("click", e => {
     drageItem()
 })
 
-input.ondrag
 
 function drageItem() {
     let dragableItems = document.querySelectorAll(".boxs-container .item p");

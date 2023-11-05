@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currenty Blank</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            min-height: 100dvh;
+            display: grid;
+            place-content: center;
+            background-color: #333;
+        }
+
+        .scroller {
+            max-width: 400px;
+            padding-block: 10px;
+            overflow: hidden;
+            -webkit-mask: linear-gradient(90deg,
+                    transparent,
+                    white 20%,
+                    white 80%,
+                    transparent);
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        }
+
+        @media (max-width: 400px) {
+            .scroller {
+                max-width: 300px;
+            }
+        }
+
+        .scroller__inner {
+            width: max-content;
+            overflow: hidden;
+            gap: .5rem;
+            display: flex;
+            animation: scroll 20s infinite linear;
+        }
+
+        .scroller__inner li {
+            background-color: #eee;
+            border-radius: 4px;
+            padding: 4px;
+            width: fit-content;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translate(calc(-50% - .25rem));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scroller">
+        <ul class="scroller__inner">
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>webdev</li>
+            <li>animations</li>
+            <li>Reactjs</li>
+            <li>Nodejs</li>
+            <!--  -->
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>webdev</li>
+            <li>animations</li>
+            <li>Reactjs</li>
+            <li>Nodejs</li>
+        </ul>
+    </div>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+
+</html>
